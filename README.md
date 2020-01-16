@@ -1,5 +1,6 @@
 # Banxico-SIE-client
-Python client for Banxico's SIE API
+Python client for Banxico's SIE API.
+
 It makes requests to the server way simpler.
 
     To instantiate it, you are going to require a token from Banxico's SIE website
