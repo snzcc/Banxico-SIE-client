@@ -40,6 +40,7 @@ class ClienteSIE():
         End date (most recent) is given in yyyy_1, mm_1, dd_1
         Start date (oldest) is given in yyyy_0, mm_0, dd_0
         Parameters are expected to be integers
+        If month is less than 2 digits (e.g.: February = 02), just put one digit (e.g.: mm_X = 2, not 02)
         """
         date1 = str(yyyy_1) + '-' + str(mm_1) + '-' + str(dd_1)
         date0 = str(yyyy_0) + '-' + str(mm_0) + '-' + str(dd_0) + '/'
@@ -52,7 +53,7 @@ class ClienteSIE():
         Series must be given as strings
         """
         for item in series:
-            self.series.append(arg)
+            self.series.append(item)
 
     def removeSeries(self, *series):
         """
